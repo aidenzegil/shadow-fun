@@ -1,38 +1,98 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #B1DDF1;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Text {
+  font-family: monospace;
+  position: absolute;
+  font-size: 30px;
+  -webkit-transform: rotate(-45deg); 
+  -moz-transform: rotate(-45deg); 
+  color: #F6BDD1;
+  text-shadow: black 1px 0 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.TopContainer {
+  height: 50%;
+  width: 85%;
+  display: flex;
+  margin-left: 15%;
+  flex-direction: row;
+}
+
+.BottomContainer {
+  height: 50%;
+  width: 85%;
+  margin-right: 15%;
+  display: flex;
+  flex-direction: row;
+}
+
+.SectionWrap {
+  width: 33%;
+  min-width: fit-content;
+  display: flex;
+  height: 50vh;
+}
+
+.SmallUp {
+  box-shadow: 0px 0px 30px 4px rgba(0, 0, 0, 0.6);
+  width: 100px;
+  display: flex;
+  background-color: darkgrey;
+  margin: auto;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.SmallDown {
+  box-shadow: inset 0px 0px 30px 4px rgba(0, 0, 0, 0.6);
+  display: flex;
+  width: 100px;
+  background-color: #fff;
+  margin: auto;
+  height: 100px;
+}
+
+.MediumUp{
+  box-shadow: 0px 0px 30px 4px rgba(0, 0, 0, 0.6);
+  display: flex;
+  border-radius: 5px;
+  margin: auto;
+  background-color: darkgrey;
+  width: 250px;
+  height: 250px;
+}
+
+.MediumDown {
+  box-shadow: inset 0px 0px 30px 4px rgba(0, 0, 0, 0.6);
+  display: flex;
+  margin: auto;
+  background-color: #fff;
+  width: 250px;
+  height: 250px;
+}
+
+.LargeUp {
+  box-shadow: 0px 0px 30px 4px rgba(0, 0, 0, 0.6);
+  display: flex;
+  margin: auto;
+  background-color: #87A878;
+  height: 400px;
+  width: 400px;
+  border-radius: 5px;
+}
+
+.LargeDown {
+  box-shadow: inset 0px 0px 30px 4px rgba(0, 0, 0, 0.6);
+  display: flex;
+  background-color: #87A878;
+  margin: auto;
+  height: 400px;
+  width: 400px;
 }
