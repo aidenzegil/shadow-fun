@@ -3,6 +3,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
+      <p className="PhoneText">Get a Computer SMH</p>
       <p className="Text">Probably Building Stuff</p>
       <div className="TopContainer">
         <div className="SectionWrap">
