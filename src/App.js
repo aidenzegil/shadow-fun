@@ -3,8 +3,8 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <p className="PhoneText">Get a Computer SMH</p>
-      <p className="Text">Probably Building Stuff</p>
+      <p className="PhoneText">	&#127814;Get a Computer SMH	&#127814;</p>
+      <p className="Text">&#127814; Probably Building Stuff	&#127814;</p>
       <div className="TopContainer">
         <div className="SectionWrap">
           <div className="LargeUp" style={{marginRight: 0, marginBottom: 0}}>

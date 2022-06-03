@@ -6,7 +6,7 @@
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background-color: #B1DDF1;
+  background-color: #454E9E;
   justify-content: center;
 }
 
@@ -129,6 +129,7 @@
 .SmallUp:hover, .MediumUp:hover, .LargeUp:hover, .Text:hover, .PhoneText:hover {
   transform: scale(1.05);
   cursor: pointer;
+  filter: brightness(103%)
 }
 
 .SmallDown:hover, .MediumDown:hover, .LargeDown:hover {
