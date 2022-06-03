@@ -61,8 +61,10 @@
   width: 100px;
   display: flex;
   background-color: darkgrey;
+  -webkit-transform: rotate(-90deg); 
+  -moz-transform: rotate(-90deg); 
   margin: auto;
-  transition: all .7s ease-in-out;
+  transition: all .9s ease-in-out;
   height: 100px;
   border-radius: 5px;
 }
@@ -81,7 +83,9 @@
   box-shadow: 0px 0px 30px 4px rgba(0, 0, 0, 0.6);
   display: flex;
   border-radius: 5px;
-  transition: all .7s ease-in-out;
+  transition: all .9s ease-in-out;
+  -webkit-transform: rotate(90deg); 
+  -moz-transform: rotate(90deg); 
   margin: auto;
   background-color: darkgrey;
   width: 250px;
@@ -104,9 +108,11 @@
   margin: auto;
   background-color: #87A878;
   height: 400px;
-  transition: all .7s ease-in-out;
+  transition: all .9s ease-in-out;
   width: 400px;
   border-radius: 5px;
+  -webkit-transform: rotate(-90deg); 
+  -moz-transform: rotate(-90deg); 
 }
 
 .LargeDown {
@@ -119,7 +125,7 @@
   width: 400px;
 }
 
-.SmallUp:hover, .MediumUp:hover, .LargeUp:hover, .Text:hover {
+.SmallUp:hover, .MediumUp:hover, .LargeUp:hover, .Text:hover, .PhoneText:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
