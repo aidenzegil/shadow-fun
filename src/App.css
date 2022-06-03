@@ -18,6 +18,7 @@
   -webkit-transform: rotate(-45deg); 
   -moz-transform: rotate(-45deg); 
   color: #F6BDD1;
+  z-index: 10;
   text-shadow: black 1px 0 10px;
 }
 
