@@ -10,8 +10,8 @@ import {
 function App() {
   return (
     <div className="App">
-      <p className="PhoneText"> &#127814;Get a Computer SMH &#127814;</p>
-      <p className="Text">&#127814; Probably Building Stuff &#127814;</p>
+      <p className="PhoneText"> &#127814;Please use a computer&#127814;</p>
+      <p className="Text">&#127814;Probably Building Stuff&#127814;</p>
       <div className="TopContainer">
         <div className="SocialWrap">
           <a
