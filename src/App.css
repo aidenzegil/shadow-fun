@@ -92,12 +92,6 @@
   width: 15%
 }
 
-.SocialIconWrap {
-  height: fit-content;
-  width: fit-content;
-  margin:auto;
-}
-
 .SocialIcon {
   width: 40px;
   height: 40px;
@@ -241,10 +235,6 @@
 a {
   text-decoration: none;
   color: #FFCCE1;
-}
-
-img {
-  object-fit: contain;
 }
 
 a:hover, a:visited, a:link, a:active {
