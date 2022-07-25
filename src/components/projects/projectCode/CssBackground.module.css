@@ -1,6 +1,7 @@
 .BoxWrapper {
     display: flex;
     flex-wrap: wrap;
+    background-color: #A0ECD0;
     height: inherit;
     width: inherit;
   }

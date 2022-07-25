@@ -5,29 +5,53 @@ import {
   faTwitter,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-scroll";
 
 function Fun() {
   return (
     <div className="App">
-      <p className="PhoneText"> Please use a computer </p>
-      <Link
-          className="BuildText"
-          activeClass="active"
-          to="projects"
-          spy={true}
-          smooth={true}
-          duration={500}
+      <div className="PhoneTextWrapper">
+        <p className="PhoneText">
+          Welcome to my website!
+          <br />
+          <br />
+          Much more functionality is available using a computer.
+          <br />
+          <br />
+          Until you have a chance to use one, check out my socials!
+        </p>
+      </div>
+      <div className="MobileSocials">
+        <a href="https://twitter.com/AidenZegil" className="SocialIcon">
+          <FontAwesomeIcon icon={faTwitter} size="3x" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/aiden-zegil-0906a4235/"
+          className="SocialIcon"
         >
-      <p>Probably Building Stuff</p>
+          <FontAwesomeIcon icon={faLinkedin} size="3x" />
+        </a>
+        <a href="https://www.instagram.com/aiden_zegil/" className="SocialIcon">
+          <FontAwesomeIcon icon={faInstagram} size="3x" />
+        </a>
+        <a href="https://github.com/aidenzegil" className="SocialIcon">
+          <FontAwesomeIcon icon={faGithub} size="3x" />
+        </a>
+      </div>
+      <Link
+        className="BuildText"
+        activeClass="active"
+        to="projects"
+        spy={true}
+        smooth={true}
+        duration={500}
+      >
+        <p>Probably Building Stuff</p>
       </Link>
       <div className="TopContainer">
         <div className="SocialWrap">
-          <a
-            href="https://twitter.com/AidenZegil"
-            className="SocialIcon"
-          >
+          <a href="https://twitter.com/AidenZegil" className="SocialIcon">
             <FontAwesomeIcon icon={faTwitter} size="3x" />
           </a>
           <a
@@ -40,8 +64,10 @@ function Fun() {
         <div className="SectionWrap">
           <div className="LargeUp" style={{ marginRight: 0, marginBottom: 0 }}>
             <div className="MediumUp" style={{ backgroundColor: "#D7EEFF" }}>
-              <div className="SmallUp" style={{ backgroundColor: "#FAFFC7" }}>
-              </div>
+              <div
+                className="SmallUp"
+                style={{ backgroundColor: "#FAFFC7" }}
+              ></div>
             </div>
           </div>
         </div>
@@ -114,10 +140,7 @@ function Fun() {
           >
             <FontAwesomeIcon icon={faInstagram} size="3x" />
           </a>
-          <a
-            href="https://github.com/aidenzegil"
-            className="SocialIcon"
-          >
+          <a href="https://github.com/aidenzegil" className="SocialIcon">
             <FontAwesomeIcon icon={faGithub} size="3x" />
           </a>
         </div>
