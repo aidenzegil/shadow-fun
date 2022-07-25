@@ -1,0 +1,46 @@
+.BoxWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    height: inherit;
+    width: inherit;
+  }
+  
+  .Text {
+    font-size: 24px;
+    color: #ee4266;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .Boxes {
+    height: 20vh;
+    width: 10%;
+    outline: 3px solid #ffbcd9;
+    outline-offset: -3px;
+    transition: all .5s;
+    position:relative;
+    background-color: #A0ECD0;
+  }
+  
+  .Boxes:hover {
+      transform: translate(-15px, -15px);
+      box-shadow: 
+      1px 1px 0px #ffbcd9,
+      2px 2px 0px #ffbcd9,
+      3px 3px 0px #A0ECD0,
+      4px 4px 0px #A0ECD0,
+      5px 5px 0px #ffbcd9,
+      6px 6px 0px #ffbcd9,
+      7px 7px 0px #A0ECD0,
+      8px 8px 0px #A0ECD0,
+      9px 9px 0px #ffbcd9,
+      10px 10px 0px #ffbcd9,
+      11px 11px 0px #A0ECD0,
+      12px 12px 0px #A0ECD0,
+      13px 13px 0px #ffbcd9,
+      14px 14px 0px #ffbcd9,
+      15px 15px 0px #A0ECD0;
+  }
+  

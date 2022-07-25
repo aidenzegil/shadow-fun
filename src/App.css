@@ -1,3 +1,10 @@
+.AppWrap {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  z-index: 0;
+}
+
 .App {
   text-align: center;
   display: flex;
@@ -6,18 +13,28 @@
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background-color: #454E9E;
+  overflow-y: scroll;
+  background-color: #7e5a9b;
   justify-content: center;
+  box-shadow: 0px 0px 30px 4px rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
 }
 
-.Text {
+.App::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+.BuildText {
   font-family: monospace;
   position: absolute;
   font-size: 30px;
+  text-decoration: none;
   transition: all .7s ease-in-out;
   -webkit-transform: rotate(-45deg); 
   -moz-transform: rotate(-45deg); 
-  color: #F6BDD1;
+  color: #FAFFC7;
   z-index: 10;
   text-shadow: black 1px 0 10px;
 }
@@ -29,9 +46,29 @@
   transition: all .7s ease-in-out;
   -webkit-transform: rotate(-45deg); 
   -moz-transform: rotate(-45deg); 
-  color: #F6BDD1;
+  color: #FAFFC7;
   text-shadow: black 1px 0 10px;
   display: none
+}
+
+.Text {
+  font-family: monospace;
+  font-size: 25px;
+  text-decoration: none;
+  color: #87A878;
+  text-shadow: black 1px 0 10px;
+}
+
+.ProjectsWrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
 }
 
 .TopContainer {
@@ -64,7 +101,7 @@
 .SocialIcon {
   width: 40px;
   height: 40px;
-  color: #87A878;
+  color: #FFCCE1;
   margin: auto;
   transition: all .5s ease-in-out;
 }
@@ -126,7 +163,7 @@
   box-shadow: 0px 0px 30px 4px rgba(0, 0, 0, 0.6);
   display: flex;
   margin: auto;
-  background-color: #87A878;
+  background-color: #FFCCE1;
   height: 400px;
   transition: all .9s ease-in-out;
   width: 400px;
@@ -139,28 +176,42 @@
   box-shadow: inset 0px 0px 30px 4px rgba(0, 0, 0, 0.6);
   display: flex;
   transition: all .7s ease-in-out;
-  background-color: #87A878;
+  background-color: #FFCCE1;
   margin: auto;
   height: 400px;
   width: 400px;
 }
 
+.Inset {
+  box-shadow: inset 0px 0px 30px 4px rgba(0, 0, 0, 0.6);
+  height: 100vh;
+  background-color: black;
+  width: 100vw;
+}
+
 .SocialIcon:hover {
-  color:#F6BDD1;
+  color:#FAFFC7;
   cursor: pointer;
   filter: brightness(103%);
   animation: tilt-shaking .25s infinite;
 }
 
-.SmallUp:hover, .MediumUp:hover, .LargeUp:hover, .Text:hover, .PhoneText:hover {
+.SmallUp:hover, .MediumUp:hover, .LargeUp:hover, .PhoneText:hover {
   transform: scale(1.05);
+  text-decoration: none;
+  filter: brightness(103%)
+}
+
+.BuildText:hover {
+  transform: scale(1.05);
+  color: #FAFFC7;
   cursor: pointer;
   filter: brightness(103%)
 }
 
 .SmallDown:hover, .MediumDown:hover, .LargeDown:hover {
   filter: brightness(90%);
-  cursor: pointer;
+
 }
 
 @media (max-width: 1200px) {
@@ -170,7 +221,7 @@
   .BottomContainer {
     display: none;
   }
-  .Text {
+  .BuildText {
     display: none;
   }
   .PhoneText {
@@ -185,4 +236,20 @@
   50% { transform: scale(1.2) translate(0, 0) rotate(0eg); }
   75% { transform: scale(1.2) translate(-5px, 5px) rotate(-5deg); }
   100% { transform: scale(1.2) translate(0, 0) rotate(0deg); }
+}
+
+a {
+  text-decoration: none;
+  color: #FFCCE1;
+}
+
+img {
+  object-fit: contain;
+}
+
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none
+}
+iframe {
+  height: 100vh;
 }
