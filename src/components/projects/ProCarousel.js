@@ -18,7 +18,7 @@ function ProCarousel() {
         <div className="Inset">
           <iframe
             style={{ width: "100%", height: "100%" }}
-            src="https://62deb807a8ff393cd5352b16--fancy-sfogliatella-ab92ef.netlify.app/"
+            src="https://fancy-sfogliatella-ab92ef.netlify.app/"
             title="Circle Landing"
           ></iframe>
         </div>
@@ -32,7 +32,7 @@ function ProCarousel() {
         <div className="Inset">
           <iframe
             style={{ width: "75%", height: "100%" }}
-            src="https://62debdb76771c8423105cf52--spontaneous-stardust-cf3ffb.netlify.app/"
+            src="https://spontaneous-stardust-cf3ffb.netlify.app"
             title="Mouse Game"
           ></iframe>
         </div>
